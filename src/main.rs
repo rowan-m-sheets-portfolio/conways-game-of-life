@@ -5,7 +5,20 @@ use panic_rtt_target as _;
 use rtt_target::{rprintln, rtt_init_print};
 
 use cortex_m_rt::entry;
-use microbit::board::Board;
+use embedded_hal::digital::InputPin;
+#[rustfmt::skip]
+use microbit::{
+    board::{Board, Buttons},
+    display::blocking::Display,
+    hal::{
+        Rng as HwRng,
+        timer::Timer,
+    },
+};
+use nanorand::{Rng, SeedableRng};
+
+mod life;
+use life::*;
 
 #[entry]
 fn main() -> ! {

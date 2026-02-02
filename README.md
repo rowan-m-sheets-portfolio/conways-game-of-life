@@ -1,21 +1,10 @@
-# mb2-template: MicroBit 2 Rust embedded project template
+# Conway's game of life for the micro:bit v2
+An implementation of Conway's game of life built to run on the BBC micro:bit V2
 
-*[A version of this as a [`cargo-generate`](https://cargo-generate.github.io/cargo-generate/) template is
-available on the `cargo-generate` branch in this repo.]*
+## Authors
+main.rs: Rowan Sheets
+life.rs: provided by Bart Massey
 
-To use this [Github template
-repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template):
-
-1. Follow the instructions linked above to make a Github repo
-   for your project.
-   
-2. If needed, do the following to set up your tools:
-
-       rustup target add thumbv7em-none-eabihf
-       rustup component add llvm-tools
-       cargo install cargo-binutils
-       cargo install --locked probe-rs-tools
-
-3. Edit this `README.md`, the `Cargo.toml` and the stuff in
-   `src/` to get the names right and the template to what
-   you need.
+## How to run
+1. Make sure you have all the requirements to use embedded rust with the BBC micro:bit (instructions available [here](https://docs.rust-embedded.org/discovery-mb2/index.html))
+2. Run the command `cargo embed`
