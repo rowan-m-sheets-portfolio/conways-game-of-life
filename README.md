@@ -2,7 +2,7 @@
 An implementation of Conway's game of life built to run on the BBC micro:bit V2
 
 ## Authors
-main.rs: Rowan Sheets
+main.rs: Rowan Sheets\n
 life.rs: provided by Bart Massey
 
 ## How to run
